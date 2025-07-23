@@ -1,5 +1,5 @@
 import React from 'react';
-import type { SvgType } from '../../utils/types/SvgTypes';
+import type { SvgType } from '../types/SvgTypes';
 
 const Sparkle: React.FC<SvgType> = ({ width, fill, className }) => {
     return (

@@ -3,6 +3,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { useRef } from 'react';
 import Sparkle from '../assets/svgs/Sparkle';
 import gsap from 'gsap';
+import { styles } from '../utils/styles.ts'
 
 export const Route = createFileRoute('/')({
     component: About,
@@ -32,11 +33,13 @@ function About() {
             ref={container}
             className="gap-y-4 flex flex-col w-full place-items-center lg:max-w-2/3">
             <div className="wrap-anywhere w-full flex flex-col gap-y-2 text-justify lg:text-lg">
-                <p className="font-instrument-serif-italic text-black text-3xl lg:text-4xl tracking-tight">
-                    <span className="text-red font-instrument-serif">
+                <p className={`${styles.heading}`}>
+                    <span className="text-red">
                         Creative-Driven
                     </span>{' '}
+                    <span className="italic">
                     Software Engineer
+                    </span>
                 </p>
                 <p className="font-outfit text-black">
                     I am Melissa, a software engineer who loves to blend code
@@ -55,7 +58,7 @@ function About() {
             </div>
             <div className="w-full flex flex-col gap-x-2 gap-y-2 flex-wrap lg:text-lg">
                 <div className="font-outfit flex items-center gap-x-2">
-                    <Sparkle width="w-4" fill="fill-blue" />
+                    <Sparkle width="w-4" fill="fill-blue-hover" />
                     <p className="text-black flex items-center gap-x-2">
                         <span className="font-instrument-serif text-3xl text-blue">
                             30
@@ -64,7 +67,7 @@ function About() {
                     </p>
                 </div>
                 <div className="font-outfit flex items-center gap-x-2">
-                    <Sparkle width="w-4" fill="fill-blue" />
+                    <Sparkle width="w-4" fill="fill-blue-hover" />
                     <p className="text-black flex items-center gap-x-2">
                         <span className="font-instrument-serif text-3xl text-blue">
                             40

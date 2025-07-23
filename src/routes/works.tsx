@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
-
+import { styles } from '../utils/styles.ts';
 export const Route = createFileRoute('/works')({
     component: RouteComponent,
 });
@@ -7,7 +7,7 @@ export const Route = createFileRoute('/works')({
 function RouteComponent() {
     return (
         <div>
-            <p className="font-instrument-serif">Things I've Built</p>
+            <p className={styles.heading}>Things I've Built</p>
         </div>
     );
 }
