@@ -30,6 +30,7 @@ function About() {
 
     return (
         <div
+            id="page-transition-container"
             ref={container}
             className="gap-y-4 flex flex-col w-full place-items-center lg:max-w-2/3">
             <div className="wrap-anywhere w-full flex flex-col gap-y-2 text-justify lg:text-lg">
