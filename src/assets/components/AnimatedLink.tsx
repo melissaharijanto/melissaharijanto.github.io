@@ -1,12 +1,7 @@
 import { useRouter } from '@tanstack/react-router';
-import type { MouseEvent, ReactNode } from 'react';
+import type { MouseEvent } from 'react';
 import { useTransitionTimeline } from '../../utils/store/TransitionContext';
-
-interface AnimatedLinkProps {
-  to: string;
-  children: ReactNode;
-  className?: string;
-}
+import type { AnimatedLinkProps } from '../types/AnimatedLinkProps';
 
 export default function AnimatedLink({ to, children, className }: AnimatedLinkProps) {
   const router = useRouter();
@@ -16,7 +11,7 @@ export default function AnimatedLink({ to, children, className }: AnimatedLinkPr
     e.preventDefault();
 
     if (location.pathname === to) return;
-    
+
     const container = document.getElementById('page-transition-container');
     if (!container) return router.navigate({ to });
 

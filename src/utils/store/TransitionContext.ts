@@ -1,5 +1,4 @@
 import { createContext, useContext } from "react";
-import gsap from 'gsap';
 
 export const TransitionContext = createContext<gsap.core.Timeline | null>(null);
 

@@ -51,7 +51,7 @@ function About() {
                 </p>
                 <p className="font-outfit text-black">
                     Based in{' '}
-                    <span className="text-red font-outfit-semibold">
+                    <span className="text-red font-semibold">
                         Singapore
                     </span>
                     .
