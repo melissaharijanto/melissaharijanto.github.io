@@ -27,8 +27,16 @@ function RouteComponent() {
     }, []);
 
     return (
-        <div id="page-transition-container" ref={container}>
-            <h1 className={`${styles.heading}`}>Things I've Built</h1>
+        <div id="page-transition-container" ref={container} className='lg:px-4 overflow-y-auto flex flex-col gap-y-8 lg:py-8 py-16'>
+            <p className={`${styles.heading}`}>Things I've Built</p>
+            <div className='grid gap-4'>
+                <div className='border-1 border-black/25 flex-col flex gap-y-4 bg-white/40 rounded-xl hover:scale-95 transition-all ease-in cursor-pointer'>
+                    <img src="/travel-log.jpg" alt="Travel Log" className="w-full h-auto rounded-lg shadow-lg" />
+                </div>
+                <div className='border-1 border-black/25 flex-col flex gap-y-4 bg-white/40 rounded-xl hover:scale-95 transition-all ease-in cursor-pointer'>
+                    <img src="/roger.jpg" alt="Travel Log" className="w-full h-auto rounded-lg shadow-lg" />
+                </div>
+            </div>
         </div>
     );
 }

@@ -32,7 +32,7 @@ function About() {
         <div
             id="page-transition-container"
             ref={container}
-            className="gap-y-4 flex flex-col w-full place-items-center lg:max-w-2/3">
+            className="gap-y-4 flex flex-col w-full place-items-center lg:max-w-[75%] lg:px-4">
             <div className="wrap-anywhere w-full flex flex-col gap-y-2 text-justify lg:text-lg">
                 <p className={`${styles.heading}`}>
                     <span className="text-red">
