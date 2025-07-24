@@ -47,16 +47,32 @@ const Navigation = () => {
                 </div>
                 <div className="flex flex-col">
                     <p className="text-black">Links</p>
-                    <a href="/resume" className={styles.navLink}>
+                    <a
+                        href="https://drive.google.com/file/d/11TjWo-55mOeTio7dKnydA2qOFplJOjAx/view?usp=drive_link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.navLink}>
                         Resume
                     </a>
-                    <a href="/github" className={styles.navLink}>
+                    <a
+                        href="https://github.com/melissaharijanto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.navLink}>
                         GitHub
                     </a>
-                    <a href="/email" className={styles.navLink}>
+                    <a
+                        href="mailto:melissaharijanto18@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.navLink}>
                         Email
                     </a>
-                    <a href="/linkedin" className={styles.navLink}>
+                    <a
+                        href="https://linkedin.com/in/melissaharijanto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.navLink}>
                         LinkedIn
                     </a>
                     <p className="text-xs text-black/50 mt-2">
