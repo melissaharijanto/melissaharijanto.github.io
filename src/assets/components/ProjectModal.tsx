@@ -24,6 +24,22 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ onClose, index }) => {
         setProjectIndex(newIndex);
     }
 
+    
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === 'ArrowLeft') {
+                changeProject(-1);
+            } else if (e.key === 'ArrowRight') {
+                changeProject(1);
+            } else if (e.key === 'Escape') {
+                onClose();
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [projectIndex]); // include projectIndex so effect reflects latest
+
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/50">
             <button className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white" onClick={() => changeProject(-1)}>
