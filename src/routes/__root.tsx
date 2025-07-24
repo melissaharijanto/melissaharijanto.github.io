@@ -14,7 +14,7 @@ export const Route = createRootRoute({
                 </div>
                 <div className="max-w-[90%] min-w-[90%] w-full xl:min-w-2/3 xl:max-w-2/3 flex items-center gap-24 h-full">
                     <Navigation />
-                    <div className='overflow-y-auto w-full h-full flex flex-col justify-center py-20 md:py-8'>
+                    <div className='overflow-y-auto w-full h-full flex flex-col justify-center py-8'>
                         <Outlet />
                     </div>
                 </div>

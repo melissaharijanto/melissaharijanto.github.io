@@ -36,7 +36,7 @@ function RouteComponent() {
             </div>
             <div className='grid gap-2 xl:grid-cols-2'>
                 {projects.map((project, idx) => (
-                    <ProjectComponent projectProps={project} key={`${project.title} ${idx}`} />
+                    <ProjectComponent projectProps={project} key={`${project.title} ${idx}`} index={idx} />
                 ))}
             </div>
         </div>
