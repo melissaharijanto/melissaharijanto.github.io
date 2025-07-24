@@ -76,7 +76,7 @@ const Navigation = () => {
                         LinkedIn
                     </a>
                     <p className="text-xs text-black/50 mt-2">
-                        Built with React, <br /> animated with GSAP.
+                        This site is <br /> built with React.
                     </p>
                 </div>
             </div>
