@@ -3,6 +3,8 @@ import { styles } from '../utils/styles.ts';
 import { useEffect, useRef } from 'react';
 import { useTransitionTimeline } from '../utils/store/TransitionContext';
 import gsap from 'gsap';
+import { projects } from '../utils/data/projects.ts';
+import ProjectComponent from '../assets/components/ProjectComponent.tsx';
 
 export const Route = createFileRoute('/works')({
     component: RouteComponent,
@@ -29,13 +31,10 @@ function RouteComponent() {
     return (
         <div id="page-transition-container" ref={container} className='lg:px-4 overflow-y-auto flex flex-col gap-y-8 lg:py-8 py-16'>
             <p className={`${styles.heading}`}>Things I've Built</p>
-            <div className='grid gap-4'>
-                <div className='border-1 border-black/25 flex-col flex gap-y-4 bg-white/40 rounded-xl hover:scale-95 transition-all ease-in cursor-pointer'>
-                    <img src="/travel-log.jpg" alt="Travel Log" className="w-full h-auto rounded-lg shadow-lg" />
-                </div>
-                <div className='border-1 border-black/25 flex-col flex gap-y-4 bg-white/40 rounded-xl hover:scale-95 transition-all ease-in cursor-pointer'>
-                    <img src="/roger.jpg" alt="Travel Log" className="w-full h-auto rounded-lg shadow-lg" />
-                </div>
+            <div className='grid gap-2'>
+                {projects.map((project, idx) => (
+                    <ProjectComponent projectProps={project} key={`${project.title} ${idx}`} />
+                ))}
             </div>
         </div>
     );

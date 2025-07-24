@@ -1,7 +1,7 @@
 import { useRouter } from '@tanstack/react-router';
 import type { MouseEvent } from 'react';
 import { useTransitionTimeline } from '../../utils/store/TransitionContext';
-import type { AnimatedLinkProps } from '../types/AnimatedLinkProps';
+import type { AnimatedLinkProps } from '../../utils/types/AnimatedLinkProps';
 
 export default function AnimatedLink({ to, children, className }: AnimatedLinkProps) {
   const router = useRouter();
