@@ -27,6 +27,7 @@ const Navigation = () => {
                     <a href="/github" className={styles.navLink}>GitHub</a>
                     <a href="/email" className={styles.navLink}>Email</a>
                     <a href="/linkedin" className={styles.navLink}>LinkedIn</a>
+                    <p className='text-xs text-black/50 mt-2'>Built with React, <br/> animated with GSAP.</p>
                 </div>
             </div>
         </div>

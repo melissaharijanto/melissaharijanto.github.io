@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import Sparkle from '../assets/svgs/Sparkle';
 import gsap from 'gsap';
 import { styles } from '../utils/styles.ts'
+import { projects } from '../utils/data/projects.ts';
 
 export const Route = createFileRoute('/')({
     component: About,
@@ -62,7 +63,7 @@ function About() {
                     <Sparkle width="w-4" fill="fill-blue-hover" />
                     <p className="text-black flex items-center gap-x-2">
                         <span className="font-instrument-serif text-3xl text-blue">
-                            30
+                            {projects.length}
                         </span>{' '}
                         projects completed
                     </p>
