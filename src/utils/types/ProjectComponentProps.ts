@@ -1,4 +1,4 @@
-import type { ProjectProps } from "./ProjectProps";
+import type { ProjectProps } from './ProjectProps';
 
 export interface ProjectComponentProps {
     projectProps: ProjectProps;

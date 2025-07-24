@@ -3,7 +3,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { useRef } from 'react';
 import Sparkle from '../assets/svgs/Sparkle';
 import gsap from 'gsap';
-import { styles } from '../utils/styles.ts'
+import { styles } from '../utils/styles.ts';
 import { projects } from '../utils/data/projects.ts';
 
 export const Route = createFileRoute('/')({
@@ -36,12 +36,8 @@ function About() {
             className="gap-y-4 flex flex-col w-full place-items-center lg:max-w-[75%] lg:px-4">
             <div className="wrap-anywhere w-full flex flex-col gap-y-2 text-justify lg:text-lg">
                 <p className={`${styles.heading}`}>
-                    <span className="text-red">
-                        Creative-Driven
-                    </span>{' '}
-                    <span className="italic">
-                    Software Engineer
-                    </span>
+                    <span className="text-red">Creative-Driven</span>{' '}
+                    <span className="italic">Software Engineer</span>
                 </p>
                 <p className="font-outfit text-black">
                     I am Melissa, a software engineer who loves to blend code
@@ -52,10 +48,7 @@ function About() {
                 </p>
                 <p className="font-outfit text-black">
                     Based in{' '}
-                    <span className="text-red font-semibold">
-                        Singapore
-                    </span>
-                    .
+                    <span className="text-red font-semibold">Singapore</span>.
                 </p>
             </div>
             <div className="w-full flex flex-col gap-x-2 gap-y-2 flex-wrap lg:text-lg">
