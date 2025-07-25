@@ -25,7 +25,7 @@ export const experiences: ExperienceProps[] = [
     {
         title: 'Test Automation Engineer',
         company: 'OCBC',
-        period: "Jun'23 - Dec'23",
+        period: "May'23 - Aug'23",
         companyLink: 'https://www.ocbc.com/group/gateway.page',
         description:
             'At OCBC, I wrote test cases based on user stories for user acceptance testing and conducted automated unit and integration tests using Tricentis Tosca, focusing on mobile and web integration. I also analyzed internal application data and designed a Quality Assurance dashboard to track downtime patterns and recommend improvements to enhance employee productivity.',

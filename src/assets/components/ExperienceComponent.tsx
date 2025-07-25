@@ -1,6 +1,5 @@
 import { styles } from '../../utils/styles';
 import type { ExperienceComponentProps } from '../../utils/types/ExperienceComponentProps';
-import { ArrowUpRight } from 'lucide-react';
 
 const ExperienceComponent = ({ exp }: ExperienceComponentProps) => {
     return (
@@ -28,20 +27,14 @@ const ExperienceComponent = ({ exp }: ExperienceComponentProps) => {
                 {exp.links
                     ? Object.entries(exp.links as Record<string, string>).map(
                           ([key, value]) => (
-                              <div>
-                                  <a
-                                      key={key}
-                                      href={value}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="flex text-blue font-outfit hover:text-blue-hover hover:underline hover:font-semibold transition-all ease-in">
-                                      {key}
-                                      <ArrowUpRight
-                                          width={20}
-                                          className="mt-0.25"
-                                      />
-                                  </a>
-                              </div>
+                              <a
+                                  key={key}
+                                  href={value}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex text-blue font-outfit hover:text-blue-hover hover:underline hover:font-semibold transition-all ease-in">
+                                  {key}
+                              </a>
                           )
                       )
                     : null}
