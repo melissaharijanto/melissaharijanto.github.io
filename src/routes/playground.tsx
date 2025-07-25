@@ -49,6 +49,8 @@ function RouteComponent() {
                     find more of my work in my Behance profile{' '}
                     <a
                         href="https://behance.net/melisara"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={styles.link}>
                         @melisara
                     </a>
