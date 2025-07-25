@@ -40,12 +40,19 @@ function RouteComponent() {
                 <p className={`${styles.heading}`}>
                     Outside <span className="text-red">Work...</span>
                 </p>
-                <p className={`font-outfit`}>
+                <p className={`font-outfit text-justify`}>
                     While I am primarily a software engineer by day, I also
                     enjoy graphic design and photography just for the joy of
                     creating. This page is where I play with those ideas, mainly
                     posters and photo edits! I gravitate toward minimalist
-                    aesthetics and typography-focused design.
+                    aesthetics and typography-focused design. You can find more
+                    of my work in my Behance profile{' '}
+                    <a
+                        href="https://behance.net/melisara"
+                        className={styles.link}>
+                        @melisara
+                    </a>
+                    !
                 </p>
             </div>
             <div className="grid grid-cols-3 lg:grid-cols-4 lg:gap-2 gap-1">
@@ -62,13 +69,7 @@ function RouteComponent() {
                 <img src="/playground/edits/7.jpg" />
                 <img src="/playground/edits/8.jpg" />
             </div>
-            <p className="font-outfit">
-                More in my Behance profile{' '}
-                <a href="https://behance.net/melisara" className={styles.link}>
-                    @melisara
-                </a>
-                !
-            </p>
+            <p className="font-outfit"></p>
         </div>
     );
 }
