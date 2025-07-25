@@ -4,4 +4,5 @@ export const styles = {
     navLink:
         'text-blue font-regular hover:font-semibold hover:text-blue-hover transition transition-all duration-300 ease-in',
     subheading: 'font-instrument-serif text-2xl xl:text-3xl tracking-tight',
+    link: 'text-blue font-outfit hover:text-blue-hover hover:underline hover:font-semibold transition-all ease-in',
 };

@@ -32,7 +32,7 @@ const ExperienceComponent = ({ exp }: ExperienceComponentProps) => {
                                   href={value}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="flex text-blue font-outfit hover:text-blue-hover hover:underline hover:font-semibold transition-all ease-in">
+                                  className={styles.link}>
                                   {key}
                               </a>
                           )

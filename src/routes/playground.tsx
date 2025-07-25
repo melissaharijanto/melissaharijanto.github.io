@@ -41,9 +41,11 @@ function RouteComponent() {
                     Outside <span className="text-red">Work...</span>
                 </p>
                 <p className={`font-outfit`}>
-                    Although I mainly do software engineering, I am a hobbyist
-                    who does graphic design and casual phone photography for fun
-                    in my free time! Sometimes I combine them too :)
+                    While I am primarily a software engineer by day, I also
+                    enjoy graphic design and photography just for the joy of
+                    creating. This page is where I play with those ideas, mainly
+                    posters and photo edits! I gravitate toward minimalist
+                    aesthetics and typography-focused design.
                 </p>
             </div>
             <div className="grid grid-cols-3 lg:grid-cols-4 lg:gap-2 gap-1">
@@ -62,7 +64,10 @@ function RouteComponent() {
             </div>
             <p className="font-outfit">
                 More in my Behance profile{' '}
-                <a href="https://behance.net/melisara">@melisara</a>!
+                <a href="https://behance.net/melisara" className={styles.link}>
+                    @melisara
+                </a>
+                !
             </p>
         </div>
     );
