@@ -42,11 +42,11 @@ function RouteComponent() {
                 </p>
                 <p className={`font-outfit text-justify`}>
                     While I am primarily a software engineer by day, I also
-                    enjoy graphic design and photography just for the joy of
-                    creating. This page is where I play with those ideas, mainly
-                    posters and photo edits! I gravitate toward minimalist
-                    aesthetics and typography-focused design. You can find more
-                    of my work in my Behance profile{' '}
+                    enjoy graphic design and casual phone photography just for
+                    the joy of creating. This page is where I play with those
+                    ideas, mainly posters and photo edits! I gravitate toward
+                    minimalist aesthetics and typography-focused design. You can
+                    find more of my work in my Behance profile{' '}
                     <a
                         href="https://behance.net/melisara"
                         className={styles.link}>
