@@ -39,7 +39,7 @@ const ExperienceComponent = ({ exp }: ExperienceComponentProps) => {
                       )
                     : null}
             </div>
-            <hr className="border-dotted border-red/50 border-t-3 my-4" />
+            <hr className="border-dotted border-black/40 border-t-3 my-4" />
         </div>
     );
 };
