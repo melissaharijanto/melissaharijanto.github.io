@@ -31,4 +31,13 @@ export const experiences: ExperienceProps[] = [
             'At OCBC, I wrote test cases based on user stories for user acceptance testing and conducted automated unit and integration tests using Tricentis Tosca, focusing on mobile and web integration. I also analyzed internal application data and designed a Quality Assurance dashboard to track downtime patterns and recommend improvements to enhance employee productivity.',
         links: null,
     },
+    {
+        title: 'Teaching Assistant',
+        company: 'NUS SoC',
+        period: "Jan'23 - Dec'24",
+        companyLink: 'https://www.comp.nus.edu.sg/',
+        description:
+            "Worked as a Teaching Assistant at the National University of Singapore's School of Computing (NUS SoC) for CS2030S (Programming Methodology II) in Jan–May 2023 and CS2103T (Software Engineering) in Aug–Dec 2023 and Aug–Dec 2024. Responsibilities included conducting tutorial sessions, answering student inquiries, assisting with grading assignments, and invigilating exams. I took a break from TA duties from Jan–Jun 2024 to pursue a full-time internship.",
+        links: null,
+    },
 ];
