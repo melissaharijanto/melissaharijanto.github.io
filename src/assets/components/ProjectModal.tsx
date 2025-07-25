@@ -48,12 +48,30 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ onClose, index }) => {
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/50">
             <button
-                className="bg-transparent rounded-full p-2 border-none absolute left-1 lg:left-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer"
+                className="!bg-transparent rounded-full border-none absolute left-1 lg:left-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer"
+                style={{
+                    backgroundColor: 'transparent',
+                    border: 'none',
+                    outline: 'none',
+                    boxShadow: 'none',
+                    appearance: 'none',
+                    WebkitAppearance: 'none',
+                    MozAppearance: 'none',
+                }}
                 onClick={() => changeProject(-1)}>
                 <ChevronLeft size={36} />
             </button>
             <button
-                className="bg-transparent rounded-full p-2 border-none absolute right-1 lg:right-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer"
+                className="!bg-transparent rounded-full border-none absolute right-1 lg:right-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer"
+                style={{
+                    backgroundColor: 'transparent',
+                    border: 'none',
+                    outline: 'none',
+                    boxShadow: 'none',
+                    appearance: 'none',
+                    WebkitAppearance: 'none',
+                    MozAppearance: 'none',
+                }}
                 onClick={() => changeProject(1)}>
                 <ChevronRight size={36} />
             </button>
@@ -120,7 +138,16 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ onClose, index }) => {
                 </div>
             </div>
             <button
-                className="absolute top-6 right-6 text-white z-50 cursor-pointer bg-transparent rounded-full p-2 border-none"
+                className="absolute top-6 right-6 text-white z-50 cursor-pointer !bg-transparent rounded-full border-none"
+                style={{
+                    backgroundColor: 'transparent',
+                    border: 'none',
+                    outline: 'none',
+                    boxShadow: 'none',
+                    appearance: 'none',
+                    WebkitAppearance: 'none',
+                    MozAppearance: 'none',
+                }}
                 onClick={onClose}>
                 <X size={28} />
             </button>
