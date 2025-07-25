@@ -9,7 +9,8 @@ export const experiences: ExperienceProps[] = [
         description:
             'During a 6-month internship at KrisLab, the digital innovation lab of Singapore Airlines, I developed AI-powered tools to streamline ideation, resulting in a 33% improvement in innovation outcomes. I also co-created real-time and emotion-aware applications using React, FastAPI, and Web APIs, and contributed to UI/UX design through Figma prototyping.',
         links: {
-            'Recommendation Letter': '',
+            'Recommendation Letter':
+                'https://drive.google.com/file/d/11hhdBfcenwhzsAIwDMqDT_SwPuNckrVF/view?usp=sharing',
         },
     },
     {
