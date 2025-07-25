@@ -38,7 +38,7 @@ function RouteComponent() {
         <div
             id="page-transition-container"
             ref={container}
-            className="lg:px-4 overflow-y-auto flex flex-col gap-y-8 xl:py-8 my-16">
+            className="lg:px-4 overflow-y-auto flex flex-col gap-y-8 xl:py-8 my-16 py-16">
             <div className="flex flex-col gap-y-2">
                 <p className={`${styles.heading}`}>
                     Things I've <span className="text-red">Built</span>
