@@ -8,7 +8,7 @@ import { TransitionProvider } from '../utils/store/TransitionProvider';
 export const Route = createRootRoute({
     component: () => (
         <TransitionProvider>
-            <div className="bg-white min-h-screen w-screen flex justify-center items-center noise overflow-hidden">
+            <div className="bg-white min-h-screen lg:h-screen w-screen flex justify-center items-center noise overflow-hidden">
                 <div className="absolute top-6 left-6 md:top-8 lg:left-8 md:hidden block">
                     <Logo />
                 </div>
