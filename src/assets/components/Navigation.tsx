@@ -75,6 +75,13 @@ const Navigation = () => {
                         className={styles.navLink}>
                         LinkedIn
                     </a>
+                    <a
+                        href="https://behance.com/melisara"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.navLink}>
+                        Behance
+                    </a>
                     <p className="text-xs text-black/50 mt-2">
                         Built with React. <br /> &copy; 2025 Melissa A.
                         Harijanto
