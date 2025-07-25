@@ -1,76 +1,75 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 .noise::before {
-  content: "";
-  background-color: transparent;
-  background-image: url("/dotnoise-light-grey.png");
-  background-repeat: repeat;
-  background-size: 182px;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
+    content: '';
+    background-color: transparent;
+    background-image: url('/dotnoise-light-grey.png');
+    background-repeat: repeat;
+    background-size: 182px;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-
-@font-face {
-  font-family: "Instrument Serif";
-  src: url("./assets/fonts/InstrumentSerif/InstrumentSerif-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
 }
 
 @font-face {
-  font-family: "Instrument Serif";
-  src: url("./assets/fonts/InstrumentSerif/InstrumentSerif-Italic.otf");
-  font-weight: normal;
-  font-style: italic;
+    font-family: 'Instrument Serif';
+    src: url('./assets/fonts/InstrumentSerif/InstrumentSerif-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Outfit";
-  src: url("./assets/fonts/Outfit/Outfit-Light.otf");
-  font-weight: 300;
-  font-style: light;
+    font-family: 'Instrument Serif';
+    src: url('./assets/fonts/InstrumentSerif/InstrumentSerif-Italic.otf');
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: "Outfit";
-  src: url("./assets/fonts/Outfit/Outfit-Regular.otf");
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Outfit';
+    src: url('./assets/fonts/Outfit/Outfit-Light.otf');
+    font-weight: 300;
+    font-style: light;
 }
 
 @font-face {
-  font-family: "Outfit";
-  src: url("./assets/fonts/Outfit/Outfit-SemiBold.otf");
-  font-style: semibold;
-  font-weight: 600;
+    font-family: 'Outfit';
+    src: url('./assets/fonts/Outfit/Outfit-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/Outfit/Outfit-SemiBold.otf');
+    font-style: semibold;
+    font-weight: 600;
 }
 
 @theme {
-  --font-instrument-serif: "Instrument Serif", serif;
-  --font-outfit: "Outfit", sans-serif;
-  --color-white: #fefefe;
-  --color-black: #1a1a1a;
-  --color-red: #AB2020;
-  --color-blue: #154DBB;
-  --color-blue-hover: #1A3B7D;
+    --font-instrument-serif: 'Instrument Serif', serif;
+    --font-outfit: 'Outfit', sans-serif;
+    --color-white: #fefefe;
+    --color-black: #1a1a1a;
+    --color-red: #ab2020;
+    --color-blue: #154dbb;
+    --color-blue-hover: #1a3b7d;
 }
