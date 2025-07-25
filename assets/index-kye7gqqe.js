@@ -1,4 +1,4 @@
-import{r as l,g as j,j as e,s as y}from"./index-DK4shaBm.js";import{p as v}from"./projects-DebLRHzT.js";/*!
+import{r as l,g as j,j as e,s as y}from"./index-DH6NjFwc.js";import{p as v}from"./projects-DebLRHzT.js";/*!
  * @gsap/react 2.1.2
  * https://gsap.com
  *
