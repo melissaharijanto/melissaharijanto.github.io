@@ -7,6 +7,7 @@ export default function AnimatedLink({
     to,
     children,
     className,
+    onClick,
 }: AnimatedLinkProps) {
     const router = useRouter();
     const tl = useTransitionTimeline();
@@ -15,6 +16,8 @@ export default function AnimatedLink({
         e.preventDefault();
 
         if (location.pathname === to) return;
+
+        if (onClick) onClick();
 
         const container = document.getElementById('page-transition-container');
         if (!container) return router.navigate({ to });
