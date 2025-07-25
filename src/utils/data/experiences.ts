@@ -18,7 +18,7 @@ export const experiences: ExperienceProps[] = [
         period: "Jun'23 - Dec'23",
         companyLink: 'https://nus.edu.sg/',
         description:
-            'At KrisLab, the digital innovation lab of Singapore Airlines, I developed AI-powered tools to streamline ideation, resulting in a 33% improvement in innovation outcomes. I also co-created real-time and emotion-aware applications using React, FastAPI, and Web APIs, and contributed to UI/UX design through Figma prototyping.',
+            'At the National University of Singapore, I developed a chatbot using the ChatGPT API to provide contextual hints for Object-Oriented Programming assignments in a course of 500–600 students, under the supervision of two professors. I applied prompt engineering techniques to ensure responses were relevant and aligned with the course content.',
         links: null,
     },
     {
