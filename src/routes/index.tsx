@@ -29,6 +29,29 @@ function About() {
         { scope: container } // this ensures only elements inside this ref are affected
     );
 
+    const calculateTotalExperience = () => {
+        const calculateMonths = (startDate: string, endDate: string) => {
+            const start = new Date(startDate);
+            const end = new Date(endDate);
+
+            let months = (end.getFullYear() - start.getFullYear()) * 12;
+            months += end.getMonth() - start.getMonth();
+
+            if (end.getDate() < start.getDate()) {
+                months--;
+            }
+
+            return Math.max(0, months);
+        };
+        const pastMonths = calculateMonths('2024-01-08', '2024-06-21');
+        const futureMonths = calculateMonths(
+            '2025-08-04',
+            new Date().toISOString()
+        );
+
+        return pastMonths + futureMonths;
+    };
+
     return (
         <div
             id="page-transition-container"
@@ -65,7 +88,7 @@ function About() {
                     <Sparkle width="w-4" fill="fill-blue-hover" />
                     <p className="text-black flex items-center gap-x-2">
                         <span className="font-instrument-serif text-3xl text-blue">
-                            40
+                            {calculateTotalExperience()}
                         </span>{' '}
                         months of experience
                     </p>
