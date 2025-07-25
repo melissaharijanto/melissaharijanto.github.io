@@ -106,7 +106,7 @@ const Navigation = () => {
             <div className="md:hidden font-outfit absolute top-6 right-6">
                 <button
                     onClick={toggleMenu}
-                    className="relative w-8 h-8 flex flex-col justify-center items-center focus:outline-none"
+                    className="relative w-8 h-8 flex flex-col justify-center items-center focus:outline-none cursor-pointer"
                     aria-label="Toggle menu">
                     <span
                         className={`block w-6 h-0.5 bg-black transition-all duration-300 ease-in-out ${
@@ -131,7 +131,7 @@ const Navigation = () => {
 
                 {/* Mobile Menu Overlay */}
                 <div
-                    className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 ${
+                    className={`fixed inset-0 bg-black/75 bg-opacity-50 z-40 transition-opacity duration-300 ${
                         isMenuOpen
                             ? 'opacity-100'
                             : 'opacity-0 pointer-events-none'
