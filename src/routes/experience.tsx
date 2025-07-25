@@ -2,6 +2,9 @@ import { createFileRoute } from '@tanstack/react-router';
 import { useEffect, useRef } from 'react';
 import { useTransitionTimeline } from '../utils/store/TransitionContext';
 import gsap from 'gsap';
+import { styles } from '../utils/styles';
+import ExperienceComponent from '../assets/components/ExperienceComponent';
+import { experiences } from '../utils/data/experiences';
 
 export const Route = createFileRoute('/experience')({
     component: RouteComponent,
@@ -34,8 +37,20 @@ function RouteComponent() {
         <div
             id="page-transition-container"
             ref={container}
-            className="lg:px-4 overflow-y-auto flex flex-col gap-y-8 xl:py-8 py-16">
-            Testing "/experience"!
+            className="lg:px-4 overflow-y-auto flex flex-col gap-y-8 xl:py-8 my-16">
+            <div className="flex flex-col gap-y-2">
+                <p className={`${styles.heading}`}>
+                    Where I've <span className="text-red">Been</span>
+                </p>
+                <p className="font-outfit">
+                    My professional career journey throughout the years.
+                </p>
+            </div>
+            <div>
+                {experiences.map((exp, index) => (
+                    <ExperienceComponent key={index} exp={exp} />
+                ))}
+            </div>
         </div>
     );
 }
