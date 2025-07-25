@@ -58,18 +58,18 @@ function RouteComponent() {
                 </p>
             </div>
             <div className="grid grid-cols-3 lg:grid-cols-4 lg:gap-2 gap-1">
-                <img src="/playground/live/1.png" />
-                <img src="/playground/live/2.png" />
-                <img src="/playground/live/3.png" />
-                <img src="/playground/live/4.png" />
-                <img src="/playground/edits/1.jpg" />
-                <img src="/playground/edits/2.jpg" />
-                <img src="/playground/edits/3.jpg" />
-                <img src="/playground/edits/4.jpg" />
-                <img src="/playground/edits/5.jpg" />
-                <img src="/playground/edits/6.jpg" />
-                <img src="/playground/edits/7.jpg" />
-                <img src="/playground/edits/8.jpg" />
+                <img src="/pg/live/1.png" />
+                <img src="/pg/live/2.png" />
+                <img src="/pg/live/3.png" />
+                <img src="/pg/live/4.png" />
+                <img src="/pg/edits/1.jpg" />
+                <img src="/pg/edits/2.jpg" />
+                <img src="/pg/edits/3.jpg" />
+                <img src="/pg/edits/4.jpg" />
+                <img src="/pg/edits/5.jpg" />
+                <img src="/pg/edits/6.jpg" />
+                <img src="/pg/edits/7.jpg" />
+                <img src="/pg/edits/8.jpg" />
             </div>
             <p className="font-outfit"></p>
         </div>
