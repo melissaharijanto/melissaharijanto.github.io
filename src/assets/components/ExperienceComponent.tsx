@@ -10,6 +10,8 @@ const ExperienceComponent = ({ exp }: ExperienceComponentProps) => {
                     <span className="text-red">{exp.title}</span> @{' '}
                     <a
                         href={exp.companyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-blue hover:text-blue-hover hover:font-semibold">
                         {exp.company}
                     </a>{' '}
@@ -28,6 +30,8 @@ const ExperienceComponent = ({ exp }: ExperienceComponentProps) => {
                               <a
                                   key={key}
                                   href={value}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                   className="text-blue font-outfit hover:text-blue-hover hover:underline hover:font-semibold transition-all ease-in">
                                   {key}
                               </a>
