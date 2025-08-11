@@ -2,6 +2,15 @@ import type { ExperienceProps } from '../types/ExperienceProps';
 
 export const experiences: ExperienceProps[] = [
     {
+        title: 'Software Engineer',
+        company: 'GIC',
+        period: "Aug'25 - Now",
+        companyLink: 'https://www.gic.com.sg/',
+        description:
+            "Just started Aug 2025! Looking forward to what's in store :D",
+        links: null,
+    },
+    {
         title: 'Full-Stack Developer',
         company: 'Singapore Airlines',
         period: "Jan'24 - Jun'24",

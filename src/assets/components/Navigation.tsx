@@ -150,7 +150,16 @@ const Navigation = () => {
                             <button
                                 onClick={closeMenu}
                                 className="w-8 h-8 flex items-center justify-center text-2xl text-black hover:bg-black/10 rounded-full transition-colors"
-                                aria-label="Close menu">
+                                aria-label="Close menu"
+                                style={{
+                                    backgroundColor: 'transparent',
+                                    border: 'none',
+                                    outline: 'none',
+                                    boxShadow: 'none',
+                                    appearance: 'none',
+                                    WebkitAppearance: 'none',
+                                    MozAppearance: 'none',
+                                }}>
                                 <X size={20} />
                             </button>
                         </div>
