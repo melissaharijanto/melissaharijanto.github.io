@@ -107,7 +107,16 @@ const Navigation = () => {
                 <button
                     onClick={toggleMenu}
                     className="relative w-8 h-8 flex flex-col justify-center items-center focus:outline-none cursor-pointer"
-                    aria-label="Toggle menu">
+                    aria-label="Toggle menu"
+                    style={{
+                        backgroundColor: 'transparent',
+                        border: 'none',
+                        outline: 'none',
+                        boxShadow: 'none',
+                        appearance: 'none',
+                        WebkitAppearance: 'none',
+                        MozAppearance: 'none',
+                    }}>
                     <span
                         className={`block w-6 h-0.5 bg-black transition-all duration-300 ease-in-out ${
                             isMenuOpen
